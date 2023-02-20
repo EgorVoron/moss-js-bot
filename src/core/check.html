@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+        dropContainer.ondragover = dropContainer.ondragenter = function(evt) {
+            evt.preventDefault();
+        };
+
+        dropContainer.ondrop = function(evt) {
+            // pretty simple -- but not for IE :(
+            fileInput.files = evt.dataTransfer.files;
+
+            // If you want to use some of the dropped files
+            const dT = new DataTransfer();
+            dT.items.add(evt.dataTransfer.files[0]);
+            dT.items.add(evt.dataTransfer.files[3]);
+            fileInput.files = dT.files;
+            alert(fileInput.files.length)
+
+            evt.preventDefault();
+        };
+    </script>
+</head>
+<body>
+<div id="dropContainer" style="border:1px solid black;height:100px;">
+    Drop Here
+</div>
+Should update here:
+<input type="file" id="fileInput" />
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "moss-js-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.2",
+    "dropzone": "^5.9.3",
+    "got": "^11.8.2",
+    "import-modules": "^2.1.0",
+    "jsdom": "^16.7.0",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^5.13.5",
+    "moss-node-client": "^1.0.2",
+    "nanoid": "^3.1.25",
+    "rimraf": "^3.0.2",
+    "telegraf": "^4.4.0",
+    "telegraf-session-local": "^2.1.0",
+    "winston": "^3.3.3"
+  }
+}
